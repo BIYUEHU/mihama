@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/styles-f368594f4384aca9.css" integrity="sha384-4+UNd14HkFCvV/c7QD4Q23QJP0xuP7Qd3Qh6BxmKFd/shyM8nGmKhxJRLdxxjR06"/>
+  <link rel="icon" href="/favicon-7a447ed069013842.ico" integrity="sha384-z0sVImiEFdIct/oPEpyEJbgQIR0UdLy6yw+e2CWB55SY2OxfvOxhCGlrSkju/dFH"/>
+  
+<script type="module">
+import init, * as bindings from '/playground-ddc45201d9d9b3eb.js';
+const wasm = await init({ module_or_path: '/playground-ddc45201d9d9b3eb_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+<link rel="modulepreload" href="/playground-ddc45201d9d9b3eb.js" crossorigin="anonymous" integrity="sha384-qknV1Q5c8bbx624DhaDrZa3XnTR7554fSzXIFnAHIVK6eujhVjxeylaw1TDPr43n"><link rel="preload" href="/playground-ddc45201d9d9b3eb_bg.wasm" crossorigin="anonymous" integrity="sha384-zMAdJbOwVwhZqPHejTS5mK/k9q1dsgHFui6tmxT+5I0Z8F3qynPHGobxYXBLBciP" as="fetch" type="application/wasm"></head>
+
+<body>
+  <script type="module">
+    import romiui from 'https://cdn.jsdelivr.net/npm/romiui@1.0.0/+esm'
+  </script>
+</body>
+
+</html>
